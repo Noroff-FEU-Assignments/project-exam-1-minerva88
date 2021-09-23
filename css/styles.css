@@ -1,0 +1,335 @@
+:root {
+    --green: #8AAE92;
+    --palegreen: #C4E3CB;
+    --whitegreen: #F4F9F4;
+    --white: #FFFFFF;
+    --grey : #707070;
+    --fontheader: "Merienda", sans-serif;
+    --fontmedium: "Source Sans Pro", sans-serif;
+    --fontparagraph: "Roboto Slab", serif;
+    --standardmargin: 30px 15px;
+}
+
+/*GLOBAL STYLES*/
+
+html {
+    height: 100%;
+    background-color: var(--whitegreen); 
+}
+
+/* Fonts */
+
+.main-header {
+    color: var(--white);
+    font-family: 'Pacifico', cursive;
+    text-shadow: #707070;
+}
+
+h1, h2, h3 {
+    font-family: var(--fontheader);
+    text-align: center;
+    color: var(--grey);
+}
+
+p {
+    font-family: var(--fontmedium);
+    max-width: 90%;
+    margin: var(--standardmargin);
+}
+
+.medium-paragraph {
+    font-weight: bold;
+    color: var(--grey);
+}
+
+label {
+    font-family: var(--fontmedium);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--grey);
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--green);
+    width: 100%;
+    height: 100px;
+}
+
+.item-header {
+    /*display: flex;
+    color: var(--white);*/
+    height: 70%;
+
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.search-icon {
+    height: 50px;
+    width: 50px;
+}
+
+/*Navigation*/
+
+nav {
+    background-color: var(--palegreen);
+    color: var(--grey);
+    width: 100%;
+    height: 75px;
+}
+
+ul {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 25px;
+    max-width: 800px;
+    
+}
+
+li {
+    display: inline-block;
+    margin: 0 auto;
+    font-family: var(--fontheader);
+    font-weight: bold;
+    color: var(--grey);
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+
+.active {
+    text-decoration: underline;
+}
+
+/*Main, global*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+img {
+    width: 90%;
+    margin: var(--standardmargin);
+}
+
+/*Cards, global*/
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+    max-height: 300px;
+    margin: 0 auto;
+
+}
+
+.card-img {
+    height: 250px;
+    width: 200px;
+    background-size: cover;
+    margin: var(--standardmargin);
+}
+
+.recipe-title {
+    background-color: var(--green);
+    color: var(--white);
+    margin: 0 auto;
+}
+
+/*Home page*/
+
+/*Slogan section*/
+
+.slogan {
+    background-image: url(../images/banner-berries-and-fruit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+.slogan-header {
+    text-align: right;
+    max-width: 250px;
+    margin: 100px 50px;
+}
+
+/*Main categories section*/
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 900px;
+}
+
+.category {
+    width: 180px;
+    height: 300px;
+    margin: 15px 7px;
+    /*padding: 15px;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cat-title {
+    color: var(--white);
+    background-color: var(--green);
+    background-size: cover;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+
+.cat-sourdough {
+    background-image: url(../images/jar_and_sourdoughbread.jpg);
+}
+
+.cat-dinners {
+    background-image: url(../images/chicken_and_kale.jpg);
+}
+
+.cat-fermented {
+    background-image: url(../images/jar_with_veggies.jpg);
+}
+
+.cat-dessert {
+    background-image: url(../images/lemon_tart.jpg);
+}
+
+/*Latest posts section*/
+
+.latest-carousel {
+    max-width: 100%;
+    position: relative;
+    margin: 80px 200px;
+}
+
+.carousel-img {
+    
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 20px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    user-select: none;
+    display: inline-block;
+    transition: all 0.5s;
+
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+ 
+
+/*About page*/
+
+.about-welcome {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.about-pics {
+    border-radius: 50%;
+    width: 30%;
+    margin: var(--standardmargin);
+    
+}
+
+/*Contact page*/
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.form-space {
+    margin: 15px 0px;
+}
+
+.form-error {
+    font-family: var(--fontparagraph);
+    display: none;
+    color: red;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/*Main category pages*/
+
+.sourdough-banner {
+    background-image: url(../images/sourdough-bread.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+.header-main-category {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+}
+
+
+footer {
+    background-color: var(--green);
+    width: 100%;
+    height: 100px;
+}
+
+@media only screen and (min-width: 650px) {
+    main {
+        
+    }
+
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
