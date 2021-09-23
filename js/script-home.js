@@ -10,7 +10,7 @@ async function getLatestPosts(){
         const response = await fetch(url);
         const getResults = await response.json();
         console.log(getResults);
-        /*const imagesArray = [];*/
+        
         
 
         for(i = 0; i < getResults.length; i++) {
@@ -67,19 +67,7 @@ function previous() {
     slider.src = imagesArray[num];
 }
 
-/*Carousel functions*/
 
-/*const postImages = document.querySelectorAll(".img-carousel carousel-img");
 
-console.log(postImages);
-
-postImages.forEach(function(image){
-    image.onclick = function(event) {
-        document.querySelector(".selected-image").classList.remove("selected-image");
-        const clickParent = event.target.parentNode;
-        clickParent.classList.add("selected-image");
-    }
-})
-*/
 
 

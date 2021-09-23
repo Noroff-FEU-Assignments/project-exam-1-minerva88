@@ -17,7 +17,7 @@ async function fetchRecipees() {
             if(i >= 10) {
                 break;
             }
-            latestRecipeesContainer.innerHTML += `<a href="specificpost.html?id=${recipees[i].id}" class="card">
+            latestRecipeesContainer.innerHTML += `<a href="specificblogpost.html?id=${recipees[i].id}" class="card">
                                                 <div class="card-img" style="background-image: url(${recipees[i].better_featured_image.source_url});">
                                                     
                                                         <h3 class="recipe-title">${recipees[i].title.rendered}</h3>

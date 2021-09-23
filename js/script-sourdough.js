@@ -17,7 +17,7 @@ async function fetchRecipees() {
 
 function createCards(recipees){
     recipees.forEach(function(recipe){
-        recipeContainer.innerHTML += `<a href="specificpost.html?id=${recipe.id}" class="card">
+        recipeContainer.innerHTML += `<a href="specificblogpost.html?id=${recipe.id}" class="card">
                                                 <div class="card-img" style="background-image: url(${recipe.better_featured_image.source_url});">
                                                     
                                                         <h3 class="recipe-title">${recipe.title.rendered}</h3>

@@ -316,6 +316,23 @@ img {
     padding: 30px;
 }
 
+/*Specific post page*/
+
+figure {
+    display: none;
+}
+
+.recipe-img {
+    width: 250px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.recipe {
+    max-width: 800px;
+    flex-direction: column;
+}
+
 
 footer {
     background-color: var(--green);
