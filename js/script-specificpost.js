@@ -2,6 +2,7 @@
 
 
 const recipeContainer = document.querySelector(".recipe");
+const modalContainer = document.querySelector(".modal");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -20,6 +21,7 @@ async function getRecipe(){
         const recipe = await response.json();
     
         createHTML(recipe);
+        createModal(recipe);
         
     }
     catch(error){
@@ -34,4 +36,8 @@ function createHTML(recipe) {
                                     <img class="recipe-img" src="${recipe.better_featured_image.source_url}">
                                     
                                     <div class="full-recipe">${recipe.content.rendered}</div>`
+}
+
+function createModal(recipe) {
+    modalContainer.innerHTML = `<img src="${recipe.better_featured_image.source_url}">`
 }
