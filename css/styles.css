@@ -470,6 +470,8 @@ footer {
     margin: 0 auto;
 }
 
+/*Modal, specific recipe*/
+
 .closed {
     display: none;
 }
@@ -504,6 +506,10 @@ footer {
 
 .modal-image {
     object-fit: cover;
+}
+
+.close-button {
+    display: none;
 }
 
 @media only screen and (min-width: 650px) {
