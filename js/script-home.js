@@ -9,27 +9,12 @@ async function getLatestPosts(){
     try{
         const response = await fetch(url);
         const getResults = await response.json();
-        console.log(getResults);
         
-        
-
         for(i = 0; i < getResults.length; i++) {
             if(i >= 6){
                 break;
             }
             imagesArray.push(getResults[i].better_featured_image.source_url);
-            console.log(imagesArray);
-            
-
-        
-            /*latestContainer.innerHTML += 
-                                        `<a href="specificpost.html?id=${getResults[i].id}" class="card">
-                                                <div class="card-img" id="slide" style="background-image: url(${getResults[i].better_featured_image.source_url});">
-                                                    
-                                                        <h3 class="recipe-title">${getResults[i].title.rendered}</h3>
-                                                    
-                                                </div>
-                                            </a>`*/
         }
     }
 

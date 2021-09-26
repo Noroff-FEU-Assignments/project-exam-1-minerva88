@@ -33,7 +33,7 @@ getRecipe();
 
 function createHTML(recipe) {
     recipeContainer.innerHTML = `<h1>${recipe.title.rendered}</h1>
-                                    <img class="recipe-img" id="open-imagemodal" src="${recipe.better_featured_image.source_url} alt="${recipe.title.rendered}"">
+                                    <img class="recipe-img" id="open-imagemodal" src="${recipe.better_featured_image.source_url}">
                                     
                                     <div class="full-recipe">${recipe.content.rendered}</div>`
 }

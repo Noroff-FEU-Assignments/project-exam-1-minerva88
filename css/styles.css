@@ -383,6 +383,7 @@ img {
     text-align: center;
     height: 50px;
     padding: 30px;
+    margin-top: 80px;
 }
 
 /*Specific post page*/
@@ -513,10 +514,7 @@ footer {
 }
 
 @media only screen and (min-width: 650px) {
-    main {
-        
-    }
-
+    
     section {
         flex-direction: row;
         flex-wrap: wrap;
